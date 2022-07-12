@@ -1,0 +1,273 @@
+.app {
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+
+}
+
+.app button {
+  margin: auto;
+  font-size: 1.4rem;
+  padding: 10px 0px;
+  color: white;
+  background-color: #0c0245;
+  border-radius: 5px;
+  border: 2px solid white;
+  width: 100%;
+}
+
+
+.app h1 {
+  padding: 10px 0px;
+  font-family: 'Montserrat',
+    sans-serif;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+
+.card-grid {
+
+  padding: 40px;
+  margin: auto;
+
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1%;
+}
+
+img {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  background: rgb(57, 52, 136);
+  background: linear-gradient(137deg, rgba(57, 52, 136, 1) 0%, rgba(115, 115, 212, 1) 100%, rgba(49, 212, 245, 1) 100%);
+  width: 50px;
+}
+
+.card {
+  position: relative;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+  transition: all ease-in 0.2s;
+
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .back {
+
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+h3 {
+  display: flex;
+
+  font-size: 1.5rem;
+
+}
+
+
+/* media queries*/
+
+@media only screen and (max-device-width: 400px) {
+
+  .app button {
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    color: white;
+    background-color: #0c0245;
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 100%;
+  }
+
+  .app {
+    padding-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 2rem;
+
+  }
+
+  .card-grid {
+
+    padding: 20px;
+    margin: auto;
+
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1%;
+  }
+
+  .app h1 {
+    font-size: 3rem;
+    padding: 10px 0px;
+    font-family: 'Montserrat',
+      sans-serif;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  img {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    background: rgb(57, 52, 136);
+    background: linear-gradient(137deg, rgba(57, 52, 136, 1) 0%, rgba(115, 115, 212, 1) 100%, rgba(49, 212, 245, 1) 100%);
+    width: 40px;
+  }
+}
+
+@media only screen and (max-device-width: 350px) {
+
+  .app button {
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    color: white;
+    background-color: #0c0245;
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 100%;
+  }
+
+  .app {
+    padding-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 2rem;
+
+  }
+
+
+  .card-grid {
+
+    padding: 10px;
+    margin: auto;
+
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1%;
+  }
+
+  .app h1 {
+    font-size: 3rem;
+    padding: 10px 0px;
+    font-family: 'Montserrat',
+      sans-serif;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  img {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    background: rgb(57, 52, 136);
+    background: linear-gradient(137deg, rgba(57, 52, 136, 1) 0%, rgba(115, 115, 212, 1) 100%, rgba(49, 212, 245, 1) 100%);
+    width: 30px;
+  }
+}
+
+@media only screen and (max-device-width: 300px) {
+
+  .app button {
+    margin: auto;
+    font-size: 1rem;
+    padding: 10px 0px;
+    color: white;
+    background-color: #0c0245;
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 100%;
+  }
+
+  .app {
+    padding-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 2rem;
+
+  }
+
+  .card-grid {
+
+    padding: 20px;
+    margin: auto;
+
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1%;
+  }
+
+  .app h1 {
+    margin: auto;
+    font-size: 2rem;
+    padding: 10px 0px;
+    font-family: 'Montserrat',
+      sans-serif;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  img {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgb(57, 52, 136);
+    background: linear-gradient(137deg, rgba(57, 52, 136, 1) 0%, rgba(115, 115, 212, 1) 100%, rgba(49, 212, 245, 1) 100%);
+    width: 25x;
+  }
+}
